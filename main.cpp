@@ -14,9 +14,13 @@ class persona{
 int main(){
     int numero_de_personas,dinero,personas_a_repartir,dinero_para_cada_uno;
     string nombre;
-    
+    bool flag=false;
 
     while (cin>>numero_de_personas){
+        if (flag){
+            cout<<endl;
+        }
+        flag=true;
         vector<persona> vector_de_personas;
     for (int i=0;i<numero_de_personas;i++){
         cin>>nombre;
@@ -76,7 +80,7 @@ int main(){
         
     }
     
-cout<<endl;
+
 }
 
 }
